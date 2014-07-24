@@ -1,4 +1,4 @@
 SampleApp
 ===============
 
-foobar
+foobar2
