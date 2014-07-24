@@ -1,4 +1,4 @@
 SampleApp
 ===============
 
-hogehoge
+foobar
