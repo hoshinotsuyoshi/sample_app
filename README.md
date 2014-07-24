@@ -1,4 +1,4 @@
 SampleApp
 ===============
 
-foobar4
+dir
