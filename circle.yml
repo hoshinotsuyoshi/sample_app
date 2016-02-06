@@ -1,3 +1,15 @@
 machine:
   ruby:
     version: 2.1.2
+
+deployment:
+   production:
+     branch: master
+     commands:
+       - |
+         if [ -z "${BUNDLE_UPDATE}" ] ; then
+         else
+           gem install specific_install --no-document
+           gem specific_install https://github.com/hoshinotsuyoshi/circleci-rubocop-pr.git
+           circleci-rubocop-pr CircleCI circleci@example.com
+         fi
