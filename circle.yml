@@ -2,6 +2,13 @@ machine:
   ruby:
     version: 2.1.2
 
+test:
+  override:
+    - |
+      if [ -z "${BUNDLE_UPDATE}" ]; then
+        bundle exec rake
+      fi
+
 deployment:
    production:
      branch: master
