@@ -12,10 +12,8 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20140724054629) do
-
   create_table "users", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
 end
