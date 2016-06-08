@@ -1,0 +1,8 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /opt/sample_app
+hooks:
+  AfterInstall:
+    - location: ./AfterInstall.sh
